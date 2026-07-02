@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krisha Gopani — AI systems builder focused on Deep Learning, Large Language Models, Computer Vision, and AI Agents.">
+    <meta name="author" content="Krisha Gopani">
+    <meta property="og:title" content="Krisha Gopani | AI Research Portfolio">
+    <meta property="og:description" content="Building intelligent systems with Deep Learning, LLMs, Computer Vision, and AI Agents.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Krisha Gopani | AI Research Portfolio">
+    <link rel="canonical" href="https://krishagopani.dev/">
+    <title>Krisha Gopani | AI Research Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background particle canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">Krisha Gopani</a>
+            <ul class="nav-links" role="list">
+                <li><a href="#home"     class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#research" class="nav-link">Research Interests</a></li>
+                <li><a href="#about"    class="nav-link">About</a></li>
+                <li><a href="#contact"  class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+            <a href="#home"     class="mobile-link">Home</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#research" class="mobile-link">Research Interests</a>
+            <a href="#about"    class="mobile-link">About</a>
+            <a href="#contact"  class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ============================================================
+             HERO
+             ============================================================ -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+
+                    <div class="hero-status">
+                        <span class="status-pulse" aria-hidden="true"></span>
+                        Open to Research Internships
+                    </div>
+
+                    <p class="hero-greeting">Hello, I'm</p>
+
+                    <h1 class="hero-name">Krisha Gopani</h1>
+
+                    <p class="hero-title">Building Intelligent Systems with Deep Learning, LLMs &amp; AI Agents</p>
+
+                    <div class="hero-rule" aria-hidden="true"></div>
+
+                    <p class="hero-intro">
+                        I build AI systems to understand how intelligent models perceive, reason, and learn.
+                        My interests span Deep Learning, Computer Vision, Large Language Models,
+                        Multimodal AI, and AI Agents — with a focus on transforming research ideas
+                        into practical implementations.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary" aria-label="View Resume (PDF)">
+                            <i data-lucide="file-text"></i> View Resume
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <i data-lucide="layers"></i> Projects
+                        </a>
+                        <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i data-lucide="github"></i> GitHub
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i data-lucide="mail"></i> Contact
+                        </a>
+                    </div>
+
+                    <div class="hero-divider" aria-hidden="true"></div>
+
+                    <div class="hero-exploring">
+                        <p class="exploring-label">Currently Exploring</p>
+                        <div class="exploring-items">
+                            <span class="explore-tag">LLM Fine-Tuning</span>
+                            <span class="explore-tag">AI Agents</span>
+                            <span class="explore-tag">Vision-Language Models</span>
+                            <span class="explore-tag">Efficient Deep Learning</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             FEATURED PROJECTS
+             ============================================================ -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Selected Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-desc">A selection of projects exploring Deep Learning, Computer Vision, Large Language Models, and Intelligent AI Systems through practical implementation and experimentation.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: Neural Style Transfer -->
+                    <div class="project-card fade-in">
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="viz-pipeline">
+                                <div class="viz-node">Content<br><span>Image</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">VGG19<br><span>CNN</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node">Style<br><span>Features</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Output<br><span>Image</span></div>
+                            </div>
+                            <p class="viz-label">Feature Extraction · Gram Matrix Optimization</p>
+                        </div>
+                        <div class="project-body">
+                            <span class="domain-badge">Deep Learning</span>
+                            <h3 class="project-title">Neural Style Transfer</h3>
+                            <p class="project-summary">Implemented neural style transfer using convolutional neural networks to separate and recombine artistic style from image content using VGG19 feature maps.</p>
+                            <div class="tech-chips">
+                                <span class="chip">PyTorch</span>
+                                <span class="chip">CNN</span>
+                                <span class="chip">VGG19</span>
+                            </div>
+                            <div class="highlights">
+                                <p class="highlights-label">Highlights</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Gram Matrix Style Loss</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Multi-Layer Feature Extraction</p>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-outline">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI Gym Trainer -->
+                    <div class="project-card fade-in">
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="viz-pipeline">
+                                <div class="viz-node">Camera<br><span>Input</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">MediaPipe<br><span>Inference</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node">Pose<br><span>Skeleton</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Real-Time<br><span>Feedback</span></div>
+                            </div>
+                            <p class="viz-label">Pose Estimation · Real-Time Inference</p>
+                        </div>
+                        <div class="project-body">
+                            <span class="domain-badge">Computer Vision</span>
+                            <h3 class="project-title">AI Gym Trainer</h3>
+                            <p class="project-summary">Developed a real-time posture analysis and exercise feedback system using pose estimation and computer vision for live rep counting and form correction.</p>
+                            <div class="tech-chips">
+                                <span class="chip">MediaPipe</span>
+                                <span class="chip">OpenCV</span>
+                                <span class="chip">Python</span>
+                            </div>
+                            <div class="highlights">
+                                <p class="highlights-label">Highlights</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Pose Keypoint Estimation</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Real-Time Joint Angle Analysis</p>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-outline">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Fine-Tuned LLM -->
+                    <div class="project-card fade-in">
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="viz-pipeline">
+                                <div class="viz-node">Base<br><span>LLM</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">LoRA<br><span>Adapter</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node">Fine-tuned<br><span>Model</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Eval<br><span>Pipeline</span></div>
+                            </div>
+                            <p class="viz-label">Parameter-Efficient Fine-Tuning · Model Evaluation</p>
+                        </div>
+                        <div class="project-body">
+                            <span class="domain-badge">Large Language Models</span>
+                            <h3 class="project-title">Fine-Tuned LLM</h3>
+                            <p class="project-summary">Adapted a domain-specific language model using LoRA-based parameter-efficient fine-tuning with a systematic evaluation pipeline for performance benchmarking.</p>
+                            <div class="tech-chips">
+                                <span class="chip">Transformers</span>
+                                <span class="chip">LoRA</span>
+                                <span class="chip">PyTorch</span>
+                            </div>
+                            <div class="highlights">
+                                <p class="highlights-label">Highlights</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> LoRA Parameter-Efficient Training</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Benchmarked Model Evaluation</p>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-outline">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Agentic Research Assistant -->
+                    <div class="project-card fade-in">
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="viz-pipeline">
+                                <div class="viz-node">Query<br><span>Input</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Planner<br><span>Agent</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node">RAG<br><span>Retriever</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Synthesizer<br><span>Output</span></div>
+                            </div>
+                            <p class="viz-label">Agent Orchestration · Retrieval-Augmented Generation</p>
+                        </div>
+                        <div class="project-body">
+                            <span class="domain-badge">AI Agents</span>
+                            <h3 class="project-title">Agentic Research Assistant</h3>
+                            <p class="project-summary">Built an autonomous multi-agent research workflow combining hybrid RAG retrieval, LangGraph orchestration, and a scientific groundedness auditing pipeline.</p>
+                            <div class="tech-chips">
+                                <span class="chip">LangGraph</span>
+                                <span class="chip">RAG</span>
+                                <span class="chip">ChromaDB</span>
+                            </div>
+                            <div class="highlights">
+                                <p class="highlights-label">Highlights</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Multi-Agent Orchestration</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Hybrid Dense + Sparse Retrieval</p>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-outline">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Vision-Language Model Explorer -->
+                    <div class="project-card fade-in">
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="viz-pipeline">
+                                <div class="viz-node">Image<br><span>Input</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">CLIP<br><span>Encoder</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node">Joint<br><span>Embedding</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Zero-Shot<br><span>Retrieval</span></div>
+                            </div>
+                            <p class="viz-label">Contrastive Learning · Cross-Modal Alignment</p>
+                        </div>
+                        <div class="project-body">
+                            <span class="domain-badge">Multimodal AI</span>
+                            <h3 class="project-title">Vision-Language Explorer</h3>
+                            <p class="project-summary">Explored CLIP-based vision-language alignment for zero-shot image retrieval, studying how contrastive training aligns visual and textual representations.</p>
+                            <div class="tech-chips">
+                                <span class="chip">CLIP</span>
+                                <span class="chip">PyTorch</span>
+                                <span class="chip">HuggingFace</span>
+                            </div>
+                            <div class="highlights">
+                                <p class="highlights-label">Highlights</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Contrastive Pretraining Study</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Cross-Modal Embedding Space</p>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-outline">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Transformer from Scratch -->
+                    <div class="project-card fade-in">
+                        <div class="project-viz" aria-hidden="true">
+                            <div class="viz-pipeline">
+                                <div class="viz-node">Token<br><span>Embedding</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Multi-Head<br><span>Attention</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node">Feed<br><span>Forward</span></div>
+                                <i data-lucide="arrow-right" class="viz-arrow"></i>
+                                <div class="viz-node viz-accent">Output<br><span>Logits</span></div>
+                            </div>
+                            <p class="viz-label">Scaled Dot-Product Attention · Positional Encoding</p>
+                        </div>
+                        <div class="project-body">
+                            <span class="domain-badge">Deep Learning</span>
+                            <h3 class="project-title">Transformer from Scratch</h3>
+                            <p class="project-summary">Implemented a decoder-only transformer from scratch in PyTorch and NumPy to deeply understand scaled dot-product attention, positional encodings, and layer normalization.</p>
+                            <div class="tech-chips">
+                                <span class="chip">PyTorch</span>
+                                <span class="chip">NumPy</span>
+                                <span class="chip">Transformers</span>
+                            </div>
+                            <div class="highlights">
+                                <p class="highlights-label">Highlights</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Attention from First Principles</p>
+                                <p class="highlight-item"><i data-lucide="check" class="check-icon"></i> Sinusoidal Positional Encoding</p>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-outline">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /projects-grid -->
+            </div>
+        </section>
+
+        <!-- ============================================================
+             RESEARCH INTERESTS
+             ============================================================ -->
+        <section id="research" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Focus Areas</span>
+                    <h2 class="section-title">Research Interests</h2>
+                    <p class="section-desc">I am interested in building intelligent systems that can perceive, reason, and learn. My focus is on understanding the principles behind modern AI through implementation, experimentation, and continuous exploration.</p>
+                </div>
+
+                <div class="interest-grid">
+
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon" aria-hidden="true"><i data-lucide="brain"></i></div>
+                        <h3 class="interest-title">Large Language Models</h3>
+                        <p class="interest-desc">Understanding how transformer-based models learn, reason, and generalize through fine-tuning, retrieval augmentation, and systematic evaluation.</p>
+                    </div>
+
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon" aria-hidden="true"><i data-lucide="eye"></i></div>
+                        <h3 class="interest-title">Computer Vision</h3>
+                        <p class="interest-desc">Building visual systems for perception, pose estimation, image understanding, and real-time inference using deep convolutional networks.</p>
+                    </div>
+
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon" aria-hidden="true"><i data-lucide="network"></i></div>
+                        <h3 class="interest-title">Deep Learning</h3>
+                        <p class="interest-desc">Exploring neural architectures, optimization strategies, representation learning, and the mathematical foundations of modern AI systems.</p>
+                    </div>
+
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon" aria-hidden="true"><i data-lucide="layers"></i></div>
+                        <h3 class="interest-title">Multimodal AI</h3>
+                        <p class="interest-desc">Investigating vision-language models that combine visual and textual signals to enable richer cross-modal understanding and zero-shot capabilities.</p>
+                    </div>
+
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon" aria-hidden="true"><i data-lucide="bot"></i></div>
+                        <h3 class="interest-title">AI Agents</h3>
+                        <p class="interest-desc">Designing autonomous systems that can reason, plan, retrieve knowledge, and use tools to solve complex multi-step problems without human intervention.</p>
+                    </div>
+
+                    <div class="interest-card fade-in">
+                        <div class="interest-icon" aria-hidden="true"><i data-lucide="zap"></i></div>
+                        <h3 class="interest-title">Efficient AI Systems</h3>
+                        <p class="interest-desc">Studying parameter-efficient fine-tuning, model compression, and scalable inference to make powerful AI systems practical and resource-aware.</p>
+                    </div>
+
+                </div>
+
+                <div class="exploring-block">
+                    <p class="exploring-label">Currently Exploring</p>
+                    <div class="exploring-items">
+                        <span class="explore-tag">Vision-Language Models</span>
+                        <span class="explore-tag">Parameter-Efficient Fine-Tuning</span>
+                        <span class="explore-tag">Retrieval-Augmented Generation</span>
+                        <span class="explore-tag">AI Agent Workflows</span>
+                        <span class="explore-tag">Transformer Architectures</span>
+                        <span class="explore-tag">Model Evaluation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             ABOUT
+             ============================================================ -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Who I Am</span>
+                    <h2 class="section-title">About</h2>
+                    <p class="section-desc">I enjoy understanding, building, and experimenting with modern AI systems — driven by curiosity, an engineering mindset, and a love for solving hard problems.</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <p>I am an AI systems builder who approaches every project as an opportunity to understand how things work at a fundamental level. I don't just implement — I experiment, compare approaches, and dig into the math behind models.</p>
+                        <p>My workflow is research-driven: I read papers, reproduce results, and then build on top of them. Whether it's training a transformer from scratch, fine-tuning an LLM, or designing a multi-agent pipeline, I care about understanding the principles, not just achieving the output.</p>
+                        <p>I am continuously learning, continuously experimenting, and genuinely excited about the direction AI research is heading — especially at the intersection of reasoning, retrieval, and multimodal understanding.</p>
+                    </div>
+
+                    <div class="about-stats fade-in">
+                        <div class="stat-card">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Research Areas</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Core Technologies</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Curiosity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CONTACT
+             ============================================================ -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-desc">Open to research internship opportunities, collaborations, and technical discussions about AI and machine learning.</p>
+                </div>
+
+                <div class="contact-channels">
+                    <a href="mailto:krisha.gopani@gmail.com" class="channel-row fade-in" aria-label="Email Krisha Gopani">
+                        <div class="channel-ic" aria-hidden="true"><i data-lucide="mail"></i></div>
+                        <div class="channel-info">
+                            <span class="channel-lbl">Email</span>
+                            <span class="channel-val">krisha.gopani@gmail.com</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="channel-arrow" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://github.com/krishagopani" target="_blank" rel="noopener noreferrer" class="channel-row fade-in" aria-label="GitHub profile">
+                        <div class="channel-ic" aria-hidden="true"><i data-lucide="github"></i></div>
+                        <div class="channel-info">
+                            <span class="channel-lbl">GitHub</span>
+                            <span class="channel-val">github.com/krishagopani</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="channel-arrow" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/krishagopani" target="_blank" rel="noopener noreferrer" class="channel-row fade-in" aria-label="LinkedIn profile">
+                        <div class="channel-ic" aria-hidden="true"><i data-lucide="linkedin"></i></div>
+                        <div class="channel-info">
+                            <span class="channel-lbl">LinkedIn</span>
+                            <span class="channel-val">linkedin.com/in/krishagopani</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="channel-arrow" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="channel-row fade-in" aria-label="View Resume">
+                        <div class="channel-ic" aria-hidden="true"><i data-lucide="file-text"></i></div>
+                        <div class="channel-info">
+                            <span class="channel-lbl">Resume</span>
+                            <span class="channel-val">Download PDF</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="channel-arrow" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-name">Krisha Gopani</p>
+            <p class="footer-built">Built with HTML, CSS &amp; JavaScript</p>
+            <p class="footer-copy">&copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
